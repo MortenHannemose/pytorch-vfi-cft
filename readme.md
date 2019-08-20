@@ -34,9 +34,7 @@ This will output the movie as `bmp` files and put them in the folder `slowed_mov
 To convert the generated frames into a video you must have `ffmpeg` installed. [Instructions here](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg).
 
 ## Pretrained model
-You can download our trained model from [http://people.compute.dtu.dk/mohan/vfi-cft/VFI_CFT_weights.pt.gz](http://people.compute.dtu.dk/mohan/vfi-cft/VFI_CFT_weights.pt.gz).
-
-This file should be placed in the root of the repository.
+There is a pretrained model in the root of the repository called VFI_CFT_weights.pt.gz. This will be loaded by default.
 
 ## Interpolation from two images
 To interpolate the middle frame from only two frames, please see `simple_example.py`.
