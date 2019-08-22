@@ -1,5 +1,8 @@
 # pytorch-vfi-cft
 Want to convert your video to slowmotion? Now you can!
+<p align="center">
+<img src='./misc/soapbox_comparison.gif' alt="gif showing an example result">
+</p>
 
 This method generates extra frames, so you can convert an existing video to a higher framerate.
 
@@ -19,10 +22,18 @@ If you use our work please cite the paper:
       year={2019},
       organization={Springer}
     }
+
+## Cyclic Fune-Tuning
+For best results, you should enable cyclic fine-tuning, but this will also make the code run considerably slower.
+This is enabled by adding `--cft true` to the command line.
     
-## Example result
-<img src='./misc/soapbox_comparison.gif' alt="gif showing an example result">
-   
+## Comparison with other methods
+<p align="center">
+<img src='./misc/fire_comparison.gif' alt="gif showing a comparison of our method to others">
+</p>
+Here is an example comparing our method against [After Effects](https://helpx.adobe.com/after-effects/using//time-effects.html#timewarp_effect) and 
+[sepconv](https://github.com/sniklaus/pytorch-sepconv).
+
 ## Usage
 To convert a video to slowmotion use `slow-movie.py`
 
@@ -31,7 +42,7 @@ Example to convert `rain.mp4` to 4x slowmotion:
 	python slow_movie.py -m rain.mp4 -f 4
     
 This will output the movie as `bmp` files and put them in the folder `slowed_movie_frames`.
-To convert the generated frames into a video you must have `ffmpeg` installed. [Instructions here](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg).
+The generated frames will automatically be converted to a video if you have `ffmpeg` installed. [Instructions here](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg).
 
 ## Pretrained model
 You can download our trained model from [http://people.compute.dtu.dk/mohan/vfi-cft/VFI_CFT_weights.pt.gz](http://people.compute.dtu.dk/mohan/vfi-cft/VFI_CFT_weights.pt.gz).
