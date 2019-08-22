@@ -31,6 +31,7 @@ This is enabled by adding `--cft true` to the command line.
 <p align="center">
 <img src='./misc/fire_comparison.gif' alt="gif showing a comparison of our method to others">
 </p>
+
 Here is an example comparing our method against [After Effects](https://helpx.adobe.com/after-effects/using//time-effects.html#timewarp_effect) and 
 [sepconv](https://github.com/sniklaus/pytorch-sepconv).
 
