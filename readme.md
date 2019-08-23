@@ -35,6 +35,8 @@ This is enabled by adding `--cft true` to the command line.
 Here is an example comparing our method against [After Effects](https://helpx.adobe.com/after-effects/using//time-effects.html#timewarp_effect) and 
 [sepconv](https://github.com/sniklaus/pytorch-sepconv).
 
+You can download our results on the UCF101 dataset: [UCF101_eval_vfi-cft.zip](https://drive.google.com/uc?export=download&id=10amlFxeRBmvpNy4bhU4hZ_5-r7x68s77).
+
 ## Usage
 To convert a video to slowmotion use `slow-movie.py`
 
@@ -46,7 +48,7 @@ This will output the movie as `bmp` files and put them in the folder `slowed_mov
 The generated frames will automatically be converted to a video if you have `ffmpeg` installed. [Instructions here](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg).
 
 ## Pretrained model
-You can download our trained model from [http://people.compute.dtu.dk/mohan/vfi-cft/VFI_CFT_weights.pt.gz](http://people.compute.dtu.dk/mohan/vfi-cft/VFI_CFT_weights.pt.gz).
+You can download our pretrained model from [dtu.dk](http://people.compute.dtu.dk/mohan/vfi-cft/VFI_CFT_weights.pt.gz) or [google drive](https://drive.google.com/uc?export=download&id=1rQAi0UXcaMcEo8_l4oSd8vJUVzp2dIIF).
 
 This file should be placed in the root of the repository.
 
@@ -61,5 +63,5 @@ The code is tested under:
 
 It will most likely work with other versions, but we have not tested it.
 
-## Issues
 This repository is actively maintained, so feel free to open an issue if you run into problems.
+cn## Issues
