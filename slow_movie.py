@@ -101,7 +101,7 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("-w", "--weight", dest="weight_path", default='VFI_CFT_weights.pt.gz')
-    parser.add_argument("-m", "--movie", dest="movie_path", default="Surf480.mp4")
+    parser.add_argument("-m", "--movie", dest="movie_path", default="rain.mp4")
     parser.add_argument("-f", "--factor", dest="slow_factor", default=2, type=int)
     parser.add_argument("-c", "--cft", dest="continuous_fine_tuning", default=False, type=bool)
     args = parser.parse_args()
